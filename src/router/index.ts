@@ -24,14 +24,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/hometabs/CategoryTab.vue'),
       },
       {
-        path: 'search-tab',
-        component: () => import('@/views/hometabs/SearchTab.vue'),
-      },
-      {
         path: 'profile-tab',
         component: () => import('@/views/hometabs/ProfileTab.vue'),
       },
     ],
+  },
+  {
+    path: '/search',
+    component: () => import('@/views/SearchPage.vue'),
   },
 ];
 

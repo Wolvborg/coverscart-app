@@ -40,14 +40,6 @@
       to: '/home/categories-tab',
       icon: appsOutline,
     },
-
-    {
-      title: 'Search',
-      name: 'search',
-      to: '/home/search-tab',
-      icon: searchOutline,
-    },
-
     {
       title: 'Profile',
       name: 'profile',
