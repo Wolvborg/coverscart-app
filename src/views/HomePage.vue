@@ -25,7 +25,7 @@
     IonTabs,
   } from '@ionic/vue';
 
-  import { appsOutline, homeOutline, searchOutline, personOutline } from 'ionicons/icons';
+  import { appsOutline, homeOutline, personOutline } from 'ionicons/icons';
 
   const tabs: Tab[] = [
     {
