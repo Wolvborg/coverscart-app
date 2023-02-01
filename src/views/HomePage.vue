@@ -4,7 +4,7 @@
       <ion-header>
         <ion-toolbar>
           <ion-title>Main View</ion-title>
-          <ion-button @click="() => router.push('/search')">Default</ion-button>
+          <ion-button @click="() => router.push('/search')">Open Search</ion-button>
         </ion-toolbar>
       </ion-header>
       <!-- https://ionicframework.com/docs/vue/navigation#working-with-tabs -->
