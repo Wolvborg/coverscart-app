@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Search</ion-title>
+        <ion-title>Cart</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding"> </ion-content>

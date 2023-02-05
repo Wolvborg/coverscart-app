@@ -2,9 +2,24 @@
   <ion-page>
     <ion-tabs>
       <ion-header>
-        <ion-toolbar>
-          <ion-title>Main View</ion-title>
-          <ion-button @click="() => router.push('/search')">Open Search</ion-button>
+        <ion-toolbar color="primary">
+          <ion-buttons slot="start">
+            <ion-menu-button :auto-hide="false"></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Coverscart</ion-title>
+          <ion-buttons slot="secondary">
+            <ion-button router-link="/search" router-direction="forward">
+              <ion-icon slot="icon-only" :icon="search"></ion-icon>
+            </ion-button>
+            <ion-button router-link="/wishlist" router-direction="forward">
+              <ion-icon slot="icon-only" :icon="heartOutline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+          <ion-buttons slot="primary" router-link="/cart" router-direction="forward">
+            <ion-button>
+              <ion-icon slot="icon-only" :icon="cartOutline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
         </ion-toolbar>
       </ion-header>
       <!-- https://ionicframework.com/docs/vue/navigation#working-with-tabs -->
@@ -21,7 +36,6 @@
 
 <script setup lang="ts">
   import { Tab } from '@/types/navigations';
-  import { useRouter } from 'vue-router';
   import {
     IonIcon,
     IonHeader,
@@ -30,35 +44,35 @@
     IonLabel,
     IonPage,
     IonRouterOutlet,
-    IonButton,
     IonTabBar,
+    IonButton,
+    IonButtons,
     IonTabButton,
     IonTabs,
+    IonMenuButton,
   } from '@ionic/vue';
 
-  import { appsOutline, homeOutline, personOutline } from 'ionicons/icons';
+  import { apps, home, person, search, heartOutline, cartOutline } from 'ionicons/icons';
 
   const tabs: Tab[] = [
     {
       title: 'Home',
       name: 'home',
       to: '/home/home-tab',
-      icon: homeOutline,
+      icon: home,
     },
     {
       title: 'Categories',
       name: 'categories',
       to: '/home/categories-tab',
-      icon: appsOutline,
+      icon: apps,
     },
     {
       title: 'Profile',
       name: 'profile',
       to: '/home/profile-tab',
-      icon: personOutline,
+      icon: person,
     },
   ];
-
-  const router = useRouter();
 </script>
 <style scoped></style>

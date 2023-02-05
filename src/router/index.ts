@@ -33,6 +33,14 @@ const routes: Array<RouteRecordRaw> = [
     path: '/search',
     component: () => import('@/views/SearchPage.vue'),
   },
+  {
+    path: '/cart',
+    component: () => import('@/views/CartPage.vue'),
+  },
+  {
+    path: '/wishlist',
+    component: () => import('@/views/WishlistPage.vue'),
+  },
 ];
 
 const router = createRouter({
