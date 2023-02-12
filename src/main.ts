@@ -24,6 +24,9 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/* Tailwind CSS */
+import './theme/tailwind.css';
+
 const pinia = createPinia();
 
 const app = createApp(App).use(IonicVue).use(router).use(pinia);
